@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class MouseDrawDemo extends JFrame
 {
-
+	
    private static final long serialVersionUID = 1L;
 
    public static void main(String[] args) 
@@ -136,6 +136,9 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener
     // mouse motion listener
     public void mouseDragged(MouseEvent event)
     {
+    	// This is where the drawing of the dots is done. 
+    	// To get a solid line, Polyline should be used and 
+    	// then we can set the stroke of the line.
         x=event.getX(); 
         y=event.getY(); 
         
